@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 20px auto;
+}
+
+/* Header Section */
+.NotesHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin:10px 0;
+    padding: 10px 0;
+}
+.NotesHeader h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+.NotesHeader input {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Add notes section */
+.NotesAdd {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+.NotesAdd h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+.NotesAdd p {
+    text-align: end;
+    margin : 10px 5px 3px 0
+}
+.NotesAdd form {
+    display: flex;
+    flex-direction: column;
+}
+.NotesAdd form input {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.NotesAdd form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 120px;
+}
+.NotesAdd form button {
+    padding: 5px 10px;
+    font-size: 0,7em;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+/* Notes Aktif */
+.NotesAktif {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.NotesAktif__body {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.NotesArsip {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.NotesArsip__body {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+/* item */
+.Item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31%;
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.ItemHeader {
+    margin: 0 0 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+.ItemHeader h1 {
+    font-size: 1.5em;
+}
+.ItemBody {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.buttons .btn-delete {
+    padding: 2px 5px;
+    margin: 0 10px 0 0;
+}
+.buttons .btn-arsip {
+    padding: 2px 5px;
+    margin: 0 10px 0 0;
+}
+@media only screen and (max-width: 600px) {
+    .NotesAdd {
+        width: 80%;
+    }
+    .NotesAktif__body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .Item {
+        width: 90%;
+    }
+  }
